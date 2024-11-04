@@ -1,0 +1,123 @@
+			body,html{	margin:0; 
+						padding:0; 
+						height:100%; 
+						color:#705022;
+						font-style: verdana;
+						
+					}
+			
+			.content{
+						
+						background-color:#f4eadc;
+						margin-bottom:0px;
+						padding-top:40px;
+						
+			}
+			.intro{
+						text-align:left;
+						padding-left:10%;
+						padding-right:10%;
+						font-size:170%;
+						
+			}
+			#museums{	background-color:#e9d4b7;
+						outline:none;
+						padding:0px;
+						margin-top:0px;
+						font-size:170%;
+						text-align:center;
+						
+			}
+			
+			#shk{		
+						
+						margin-right:30%;
+						margin-left:35%;
+						width:30%;
+						margin-top:7%;
+						border:outset 2px #987554;
+						border-radius:5px;
+						text-align:center;
+						align-content:center;
+						}
+			.pic{		margin-right:30%;
+						margin-left:30%;
+						width:30%;
+						margin-top:7%;
+						border:outset 2px #987554;
+						border-radius:5px;
+			}
+			#quote{ 	font-size:250%;
+						margin-left:8%;
+						margin-right:8%;
+						text-align:center;
+						margin-top:5%;
+						margin-bottom:10%;}
+			
+			em{ 		font-size:100%;
+						margin-right:10%;
+						text-align:center;
+						margin-left:10%;
+						display:block;
+						margin-top:3%;
+						}
+			
+			header{		display:flex;
+						align-content:center;
+						position:sticky;
+						height:120px;
+						width:100%;
+						
+        }			
+			.nav{		
+						width:100%;
+						height:5%;
+						margin:auto;
+						padding: 35px 0;
+						display:flex;
+						align-items:center;
+						justify-content:space-between;
+						background-color:#987554;
+						position:fixed;
+						font-size:130%;
+	}
+
+			.logo{		width:120px;
+						cursor:pointer;
+				
+	}
+			.nav ul li{	
+						list-style:none;
+						display:inline-block;
+						margin: 0 20px;
+						position:relative;
+	}
+
+			.nav ul li a{
+						text-decoration:none;
+						 color:#f4eadc;
+						 text-transform:UPPERCASE;
+						 font-weight:bold;
+	}
+
+
+			.nav ul li::after{
+						content: '';
+						height:3px;
+						width:0%;
+						background:#f4eadc;
+						position:absolute;
+						left:0;
+						bottom:-10px;
+						transition:0.5s;
+	}
+			.nav ul li:hover::after{
+						width:100%;
+	}
+			a{		
+						text-decoration:none;
+						color:#705022;
+						display:block;
+						text-align:center;
+						text-shadow:2% 2% 5% #987554;
+					}

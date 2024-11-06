@@ -4,6 +4,47 @@
     <head>
         <meta charset="utf-8">
         <title>Sharjah Classic Car Museum</title>
+	<style>
+            @keyframes fade {
+                       0% {
+                           opacity: 0;
+                       }
+                       50% {
+                           opacity: 1;
+                       }
+                       100% {
+                           opacity: 0;
+                       }
+                   }
+            .container {
+                        width: 500px;
+                        height: 500px;
+                        margin: auto;  /* w3schools margin auto the browser calculate the margin */
+                        position: relative;
+                        border-radius: 10px;    /* w3schools border radius help make the border edges rounder */
+                        overflow: hidden;   /* to have hid image overflow*/
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    }
+            
+            .container img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        animation: fade 5s infinite;
+                    }
+            
+            
+            /* w3schools selcet the image (num) from the container */
+            .container img:nth-child(2) {
+                animation-delay: 3s;
+            }
+            .container img:nth-child(3) {
+                animation-delay: 6s;
+            }
+        </style>
     </head>
     
     <body>
@@ -29,7 +70,7 @@
                     <article>
                         <section id="overview">
 			<!-- overview section -->
-                            <h3>Overview</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">Overview</h2>
                             <p>The Sharjah Classic Cars Museum, first opened in 2008 and re-inaugurated after renovations in 2013, is a unique
 							destination for classic car enthusiasts. It features over 100 meticulously restored classic cars dating back to the
 							early 20th century, including rare models like the 1969 Mercedes Pullman Limousine, custom-made for Sharjah's ruler.
@@ -43,16 +84,16 @@
 							industry.</p>
                         </section>
                         <!-- photos gallery Section -->
-                        <section id="gallery">
-                            <h3>Photo Gallery</h3>
+                        <h2 style="text-shadow: 2px 2px 5px #ad792f;">Photo Gallery</h2>
+                        <div class="container">
                             <img src="Car-museum1.jpeg" alt="Car PIC1" width="400">
                             <img src="Car-museum2.jpeg" alt="Car PIC2" width="400">
                             <img src="Car-museum3.jpeg" alt="Car PIC3" width="400">
-                        </section>
+                        </div>
 					
 						<!--Official website link-->
                         <section id="website">
-                            <h3>Website for more information:</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">Website for more information:</h2>
                             <a href="https://www.shjocc.com/">Visit the website</a>
                         </section>
                     </article>
@@ -61,7 +102,7 @@
                 <td>
                     <aside>
                         <section id="contact">
-                            <h3><br>Contact Details</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;"><br>Contact Details</h2>
                             <dl>
                                 <dt><strong>Sharjah Classic Car Museum</strong></dt>
                                     <br>
@@ -74,7 +115,7 @@
                         </section>
                         
                         <section id="location">
-                            <h3>How to get there?</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">How to get there?</h2>
                             <p>Sharjah Classic Cars Museum is located on Airport Road – between the 4 th and 5th intersections, next to Sharjah
 							International Airport and opposite Sharjah Discovery Centre</p>
                             <p><a href="https://maps.app.goo.gl/LJzoyKUV9aJD5e2s6?g_st=com.google.maps.preview.copy">See on Google Maps</a></p>
@@ -86,11 +127,8 @@
         </table>
         
         <footer>
-            <!-- will be adjuested to the center-->
-		<br>
-		<br>
-		<img src="logo.png" alt="Website Logo" width="100">	
-			
+            <img src="logo1.png" alt="Website Logo" width="100">
+            <p>&copy;2024 Sharjah Classic Car Museum. All rights reserved.</p>
         </footer>
      
     </body>

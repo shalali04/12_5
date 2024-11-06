@@ -4,6 +4,47 @@
     <head>
         <meta charset="utf-8">
         <title>Sharjah Heritage Museum</title>
+	<style>
+            @keyframes fade {
+                       0% {
+                           opacity: 0;
+                       }
+                       50% {
+                           opacity: 1;
+                       }
+                       100% {
+                           opacity: 0;
+                       }
+                   }
+            .container {
+                        width: 500px;
+                        height: 500px;
+                        margin: auto;  /* w3schools margin auto the browser calculate the margin */
+                        position: relative;
+                        border-radius: 10px;    /* w3schools border radius help make the border edges rounder */
+                        overflow: hidden;   /* to have hid image overflow*/
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    }
+            
+            .container img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        animation: fade 5s infinite;
+                    }
+            
+            
+            /* w3schools selcet the image (num) from the container */
+            .container img:nth-child(2) {
+                animation-delay: 3s;
+            }
+            .container img:nth-child(3) {
+                animation-delay: 6s;
+            }
+        </style>
     </head>
     
     <body>
@@ -29,7 +70,7 @@
                     <article>
                         <section id="overview">
 			<!-- overview section -->
-                            <h3>Overview</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">Overview</h2>
                             <p>The Sharjah Heritage Museum is dedicated to preserving and showcasing the rich historical and 
 							cultural heritage of the emirate. Housed in a restored 18th-century pearl merchant’s house, 
 							the museum features six galleries that explore various aspects of Emirati life, including landscape, 
@@ -44,17 +85,17 @@
 							it a must-visit for anyone interested in understanding the emirate’s roots.</p>
                         </section>
                         <!-- photos gallery Section -->
-                        <section id="gallery">
-                            <h3>Photo Gallery</h3>
+                        <h2 style="text-shadow: 2px 2px 5px #ad792f;">Photo Gallery</h2>
+                        <div class="container">
                             <img src="Heritage1.jpeg" alt="Heritage PIC1" width="400">
                             <img src="Heritage2.jpeg" alt="Heritage PIC2" width="400" height="240">
                             <img src="Heritage3.jpeg" alt="Heritage PIC3" width="400"height="260">
 			    <img src="Heritage4.jpeg" alt="Heritage PIC4" width="400" height="260">
-                        </section>
+                        </div>
 					
 						<!--Official website link-->
                         <section id="website">
-                            <h3>Website for more information:</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">Website for more information:</h2>
                             <a href="https://www.sharjahmuseums.ae/en-US/Museums/Sharjah-%E2%80%8EHeritage-%E2%80%8E%E2%80%8EMuseum">Visit the website</a>
                         </section>
                     </article>
@@ -63,7 +104,7 @@
                 <td>
                     <aside>
                         <section id="contact">
-                            <h3><br>Contact Details</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;"><br>Contact Details</h2>
                             <dl>
                                 <dt><strong>Sharjah Heritage Museum</strong></dt>
                                     <br>
@@ -76,7 +117,7 @@
                         </section>
                         
                         <section id="location">
-                            <h3>How to get there?</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">How to get there?</h2>
                             <p>Sharjah Heritage Museum can be found in the Heart of Sharjah heritage district, opposite Souk Al Arsa and next to Bait Al Naboodah.</p>
                             <p><a href="https://maps.app.goo.gl/n83M2JaPPgATUXnX7">See on Google Maps</a></p>
                                     
@@ -87,11 +128,8 @@
         </table>
         
         <footer>
-            <!-- will be adjuested to the center-->
-		<br>
-		<br>
-		<img src="logo.png" alt="Website Logo" width="100">	
-			
+            <img src="logo1.png" alt="Website Logo" width="100">
+            <p>&copy;2024 Sharjah Heritage Museum. All rights reserved.</p>
         </footer>
      
     </body>

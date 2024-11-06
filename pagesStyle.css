@@ -1,75 +1,84 @@
-/* external style sheet that is linked to museums descriptions pages*/
+/* external style sheet that is linked to museums descriptions pages */
 
-header, nav, article, aside, footer{
-    margin: 0;
-    padding: 0;
+header, nav, article, aside, footer {
+    margin: 0px;
+    padding: 0px;
     font-family: Arial, sans-serif;
 }
 
-header{
-    background-color: #987554;
+header {
+    background-color: #654321;
     color: #f4eadc;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;    /* w3schools this was used to make items in one line in center*/
+    justify-content: center;    /* w3schools this was used make items at center of container */
 }
 
-header img{
-    display: inline-block;
+header img {
+    display: inline-block;  /* w3schools used to display items horizontally  */
     margin-right: 20px;
 }
 
-nav{
+nav {
     background-color: #987554;
     padding: 15px;
     text-align: center;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #f4eadc;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover{
-    color: #e0d2bf;
+nav ul li a:hover {
+    color: #d0c2ae;
     text-shadow: 1px 1px 2px gray;
 }
 
-table{
+body {
+    background-color: #f4eadc;
+}
+
+table {
     width: 100%;
     margin: 20px 0;
     border-spacing: 20px;
 }
 
-article, aside{
-    background-color: #e0d2bf;
+article, aside {
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer{
-    background-color: #f4eadc;
-    color: #e0d2bf;
+footer {
+    background-color: #654321;
+    color: #705022;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
-footer img{
+footer img {
     margin-top: 10px;
     display: inline-block;
 }
 
-a{
-    color: #705022;
+a {
+    font-weight: bold;
+    color: #7fa9b5;
     text-decoration: none;
+
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
+

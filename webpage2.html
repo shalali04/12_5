@@ -5,7 +5,47 @@
         <meta charset="utf-8">
         <title>Sharjah Aquarium</title>
         <link rel="stylesheet" href="pagesStyle.css">
-
+	<style>
+            @keyframes fade {
+                       0% {
+                           opacity: 0;
+                       }
+                       50% {
+                           opacity: 1;
+                       }
+                       100% {
+                           opacity: 0;
+                       }
+                   }
+            .container {
+                        width: 500px;
+                        height: 500px;
+                        margin: auto;  /* w3schools margin auto the browser calculate the margin */
+                        position: relative;
+                        border-radius: 10px;    /* w3schools border radius help make the border edges rounder */
+                        overflow: hidden;   /* to have hid image overflow*/
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    }
+            
+            .container img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        animation: fade 5s infinite;
+                    }
+            
+            
+            /* w3schools selcet the image (num) from the container */
+            .container img:nth-child(2) {
+                animation-delay: 3s;
+            }
+            .container img:nth-child(3) {
+                animation-delay: 6s;
+            }
+        </style>
     </head>
     
     <body>
@@ -14,7 +54,6 @@
             <h1>Sharjah Aquarium</h1>
         </header>
 		
-		<!-- navigation Menu (Will be adjusted later to be horizontal) -->
         <nav>
             <ul>
                 <li><a href="#overview">Overview</a></li>
@@ -31,7 +70,7 @@
                     <article>
                         <section id="overview">
 						<!-- overview section -->
-                            <h3>Overview</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">Overview</h2>
                             
                             <p>Sharjah Aquarium, which opened on June 6, 2008, offers visitors an opportunity to explore the captivating underwater world and its
 							incredible marine life. Home to nearly 100 species, including clownfish, seahorses, moray eels, and reef sharks, 
@@ -48,17 +87,17 @@
 							
                         </section>
                         <!-- photos gallery Section -->
-                        <section id="gallery"> 
-                            <h3>Photo Gallery</h3>
+			<h2 style="text-shadow: 2px 2px 5px #ad792f;">Photo Gallery</h2>
+			<div class="container">
                             <img src="Aquarium1.jpeg" alt="Aquarium PIC1" width="400">
                             <img src="Aquarium2.jpeg" alt="Aquarium PIC2" width="400" height="220">
                             <img src="Aquarium3.jpeg" alt="Aquarium PIC3" width="400">
 							<img src="Aquarium4.jpeg" alt="Aquarium PIC4" width="400" height="286">
-                        </section>
+                        </div>
 					
 						<!--Official website link-->
                         <section id="website">
-                            <h3>Website for more information:</h3>
+                             <h2 style="text-shadow: 2px 2px 5px #ad792f;">Website for more information:</h2>
                             <a href="https://www.sharjahmuseums.ae/en-US/Museums/Sharjah-Aquarium">Visit the website</a>
                         </section>
                     </article>
@@ -67,7 +106,7 @@
                 <td>
                     <aside>
                         <section id="contact">
-                            <h3><br>Contact Details</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;"><br>Contact Details</h2>
                             <dl>
                                 <dt><strong>Sharjah Aquarium </strong></dt>
                                     <br>
@@ -91,10 +130,9 @@
         </table>
         
         <footer>
-            <!-- will be adjuested to the center-->
-		<br>
-		<br>
-		<img src="logo.png" alt="Website Logo" width="100">		
+		<img src="logo.png" alt="Website Logo" width="100">
+            	<p>&copy;2024 Sharjah Aquarium. All rights reserved.</p>
+	
         </footer>
      
     </body>

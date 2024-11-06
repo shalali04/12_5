@@ -3,7 +3,7 @@
 header, nav, article, aside, footer {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif, Arial;
 }
 
 header {
@@ -61,7 +61,7 @@ article, aside {
 
 footer {
     background-color: #654321;
-    color: #705022;
+    color: #f4eadc;
     text-align: center;
     padding: 30px;
 }

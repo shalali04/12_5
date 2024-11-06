@@ -5,6 +5,48 @@
         <meta charset="utf-8">
         <title>Sharjah Maritime Museum</title>
         <link rel="stylesheet" href="pagesStyle.css">
+         
+        <style>
+            @keyframes fade {
+                       0% {
+                           opacity: 0;
+                       }
+                       50% {
+                           opacity: 1;
+                       }
+                       100% {
+                           opacity: 0;
+                       }
+                   }
+            .container {
+                        width: 500px;
+                        height: 500px;
+                        margin: auto;  /* w3schools margin auto the browser calculate the margin */
+                        position: relative;
+                        border-radius: 10px;    /* w3schools border radius help make the border edges rounder */
+                        overflow: hidden;   /* to have hid image overflow*/
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    }
+            
+            .container img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        animation: fade 5s infinite;
+                    }
+            
+            
+            /* w3schools selcet the image (num) from the container */
+            .container img:nth-child(2) {
+                animation-delay: 3s;
+            }
+            .container img:nth-child(3) {
+                animation-delay: 6s;
+            }
+            </style>
     </head>
     
     <body>
@@ -30,7 +72,7 @@
                     <article>
                         <section id="overview">
 			<!-- overview section -->
-                            <h3>Overview</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">Overview</h2>
                             <p>Sharjah Maritime Museum, initially opened on April 9, 2003, in Al Mareijah and later relocated to Al Khan in 2009, offers a fascinating glimpse into Sharjah's rich maritime heritage.
 				The museum showcases the significance of marine life in the development of Sharjah through exhibits on pearl hunting, fishing, and maritime trade. 
 				Visitors can explore models of traditional wooden dhows, pearl fishing boats, diving tools, and fishing equipment, all of which highlight the 
@@ -43,17 +85,15 @@
 				history and culture.</p>
                         </section>
                         <!-- photos gallery Section -->
-                        <section id="gallery">
-                            <h3>Photo Gallery</h3>
-                            <img src="Maritime1.jpeg" alt="Maritime PIC1" width="400" height="175">
-                            <img src="Maritime2.jpeg" alt="Maritime PIC2" width="400">
-                            <img src="Maritime3.jpeg" alt="Maritime PIC3" width="400">
-							<img src="Maritime4.jpeg" alt="Maritime PIC4" width="400">
-                        </section>
+                        <div class="container">
+                                <img src="Maritime1.jpeg" alt="Maritime Exhibit 1">
+                                <img src="Maritime2.jpeg" alt="Maritime Exhibit 2">
+                                <img src="Maritime3.jpeg" alt="Maritime Exhibit 3">
+                        </div>
 					
 						<!--Official website link-->
                         <section id="website">
-                            <h3>Website for more information:</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">Website for more information:</h2>
                             <a href="https://www.sharjahmuseums.ae/en-us/museums/sharjah-maritime-museum">Visit the website</a>
                         </section>
                     </article>
@@ -62,7 +102,7 @@
                 <td>
                     <aside>
                         <section id="contact">
-                            <h3><br>Contact Details</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;"><br>Contact Details</h2>
                             <dl>
                                 <dt><strong>Sharjah Maritime Museum </strong></dt>
                                     <br>
@@ -75,7 +115,7 @@
                         </section>
                         
                         <section id="location">
-                            <h3>How to get there?</h3>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">How to get there?</h2>
                             <p>Sharjah Maritime Museum is located in Al Khan, adjacent to Sharjah Aquarium.</p>
                             <p><a href="https://maps.app.goo.gl/NJEiFXQY7wVBz7337">See on Google Maps</a></p>
                                     
@@ -86,10 +126,8 @@
         </table>
         
         <footer>
-		<!-- will be adjuested to the center-->
-		<br>
-		<br>
-		<img src="logo.png" alt="Website Logo" width="100">		
+            <img src="logo1.png" alt="Website Logo" width="100">
+            <p>&copy;2024 Sharjah Maritime Museum. All rights reserved.</p>
         </footer>
      
     </body>

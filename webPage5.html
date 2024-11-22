@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Sharjah Heritage Museum</title>
-
-	<link rel="stylesheet" href="pagesStyle.css">
-
+<head>
+    <meta charset="utf-8">
+    <title>Sharjah Heritage Museum</title>
+	<link rel = "stylesheet" type ="text/css" href = "CSS.css">
 	<style>
             @keyframes fade {
                        0% {
                            opacity: 0;
                        }
-                       25% {
-                           opacity: 1;
-                       }
-		       75% {
+                       50% {
                            opacity: 1;
                        }
                        100% {
@@ -39,53 +33,53 @@
                         top: 0;
                         left: 0;
                         opacity: 0;
-                        animation: fade 12s infinite;
+                        animation: fade 5s infinite;
                     }
             
             
             /* w3schools selcet the image (num) from the container */
-		
-	    .container img:nth-child(1) {
-                animation-delay: 0s;
-            }
             .container img:nth-child(2) {
                 animation-delay: 3s;
             }
             .container img:nth-child(3) {
                 animation-delay: 6s;
             }
-	    .container img:nth-child(4) {
-       	 	animation-delay: 9s; 
-	    }
+			#rec	{	
+						display:block;
+						margin-left:auto; 
+						margin-right:auto;
+						padding-top:5px;
+					}	
+			h2		{
+						text-shadow: 2px 2px 5px #ad792f;
+					}	
+						
         </style>
-    </head>
-    
-    <body>
-        <header>
-            <img src="HeritageLOGO.jpeg" alt="Museum Logo" width="100">
-            <h1>Sharjah Heritage Museum</h1>
-        </header>
+   
+</head>
+<body>
+	<img id ="MLogo" src="C:\Users\a3als\OneDrive\Desktop\web project\HeritageLOGO.jpeg" alt="Museum Logo" height="150" width="150" style=" left:50px; top:50px;">
+	<header>
+	<div class="sec1">
+		<h1 style="text-shadow: 2px 2px 5px #ad792f;">Sharjah Heritage Museum</h1>
 		
-		<!-- navigation Menu (Will be adjusted later to be horizontal) -->
-        <nav>
+	</div>
+	</header>
+	<nav>
             <ul>
-		<li><a href="main.html">Home</a></li>
-                <li><a href="#overview">Overview</a></li>
+				<li><a href="#overview">Overview</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact Us</a></li>
-		<li><a href="#location">How to Get There</a></li>
-		<li><a href="#website">Official website</a></li>
+				<li><a href="https://www.sharjahmuseums.ae/en-US/Museums/Sharjah-%E2%80%8EHeritage-%E2%80%8E%E2%80%8EMuseum">Official website</a></li>
             </ul>
         </nav>
 
         <table border="0">
             <tr>
-                <td>
-                    <article>
-                        <section id="overview">
-			<!-- overview section -->
-                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">Overview</h2>
-                            <p>The Sharjah Heritage Museum is dedicated to preserving and showcasing the rich historical and 
+				<td>
+					<section id="overview">	
+						<h2> Overview </h2>
+						<p>The Sharjah Heritage Museum is dedicated to preserving and showcasing the rich historical and 
 							cultural heritage of the emirate. Housed in a restored 18th-century pearl merchant’s house, 
 							the museum features six galleries that explore various aspects of Emirati life, including landscape, 
 							lifestyle, traditions, and livelihoods. Visitors can learn about how the local ancestors lived, traditional knowledge, 
@@ -97,30 +91,30 @@
 							engaging elements such as folk tales, proverbs, and puzzles, making the visit more interactive and enjoyable.
 							Overall, the Sharjah Heritage Museum offers a deep dive into the history, culture, and customs of the region, making 
 							it a must-visit for anyone interested in understanding the emirate’s roots.</p>
-                        </section>
+                        
+                    <div id="gallery">
                         <!-- photos gallery Section -->
-			<section id="gallery">
-                        <h2 style="text-shadow: 2px 2px 5px #ad792f;">Photo Gallery</h2>
+                        <h2>Photo Gallery</h2>
                         <div class="container">
-                            <img src="Heritage1.jpeg" alt="Heritage PIC1" width="400">
-                            <img src="Heritage2.jpeg" alt="Heritage PIC2" width="400" height="240">
-                            <img src="Heritage3.jpeg" alt="Heritage PIC3" width="400"height="260">
-			    <img src="Heritage4.jpeg" alt="Heritage PIC4" width="400" height="260">
+                            <img src="C:\Users\a3als\OneDrive\Desktop\Heritage1.jpeg" alt="Heritage PIC1" width="400">
+                            <img src="C:\Users\a3als\OneDrive\Desktop\Heritage2.jpeg" alt="Heritage PIC2" width="400" height="240">
+                            <img src="C:\Users\a3als\OneDrive\Desktop\Heritage3.jpeg" alt="Heritage PIC3" width="400"height="260">
+							<img src="C:\Users\a3als\OneDrive\Desktop\Heritage4.jpeg" alt="Heritage PIC4" width="400" height="260">
                         </div>
-			</section>
 					
 						<!--Official website link-->
-                        <section id="website">
-                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">Website for more information:</h2>
+                        <div id="website">
+							<br>	
+                            <h2">Website for more information:</h2>
                             <a href="https://www.sharjahmuseums.ae/en-US/Museums/Sharjah-%E2%80%8EHeritage-%E2%80%8E%E2%80%8EMuseum">Visit the website</a>
-                        </section>
-                    </article>
-                </td>
-                
+                        </div>
+					</section>	
+                    
+                </td>	
                 <td>
-                    <aside>
+					<div>
                         <section id="contact">
-                            <h2 style="text-shadow: 2px 2px 5px #ad792f;"><br>Contact Details</h2>
+                            <h2><br>Contact Details</h2>
                             <dl>
                                 <dt><strong>Sharjah Heritage Museum</strong></dt>
                                     <br>
@@ -130,16 +124,22 @@
                                     <dd><a href="mailto:info@sma.gov.ae">info@sma.gov.ae </a></dd>
                                     <dd>+971 6 568 0006</dd>
                             </dl>
-                        </section>
-                        
-                        <section id="location">
-                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">How to get there?</h2>
+                            <h2>How to get there?</h2>
                             <p>Sharjah Heritage Museum can be found in the Heart of Sharjah heritage district, opposite Souk Al Arsa and next to Bait Al Naboodah.</p>
                             <p><a href="https://maps.app.goo.gl/n83M2JaPPgATUXnX7">See on Google Maps</a></p>
                                     
                         </section>
-                    </aside>
+						<br><br>
+						<section style="padding-bottom:100px;">
+						<h2> Check Shrjah's Museums </h2>
+						<span> <a href="webpage4.html"> <img id="rec" src="C:\Users\a3als\OneDrive\Desktop\web project\ScienceLOGO.jpeg" width="60" height="60"> <div style="text-align:center; border-bottom:solid 2px #987554; padding-top:10px; padding-bottom:5px;">Sharjah Science Museum<</div> </a> </span>
+						<span> <a href="webpage3.html"> <img id="rec" src="C:\Users\a3als\OneDrive\Desktop\web project\CarLOGO.jpeg" width="60" height="60"> <div style="text-align:center; border-bottom:solid 2px #987554; padding-top:10px; padding-bottom:5px;">Sharjah Classic Car Museum </div> </a> </span>
+						<span> <a href="webpage2.html"> <img id="rec" src="C:\Users\a3als\OneDrive\Desktop\web project\AquariumLOGO.jpeg" width="60" height="60"> <div style="text-align:center; border-bottom:solid 2px #987554; padding-top:10px; padding-bottom:5px;">Sharjah Aquarium </div> </a> </span>
+						
+					</section>	
+                    
                 </td>
+				
             </tr>
         </table>
         
@@ -148,5 +148,5 @@
             <p>&copy;2024 Sharjah Heritage Museum. All rights reserved.</p>
         </footer>
      
-    </body>
+</body>
 </html>

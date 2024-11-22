@@ -127,4 +127,11 @@
 						display:block;
 						text-align:center;
 						text-shadow:2% 2% 5% #987554;
-					}
+	}
+			.pic:hover	{
+					box-shadow:10px 10px 15px #987554, 0 0 30px #987554, 0 0 15px #987554;
+	}
+			
+			#museums p:hover{
+				text-shadow:10px 10px 15px #987554, 0 0 30px #987554, 0 0 15px #987554;
+	}

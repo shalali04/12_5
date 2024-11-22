@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Museum Website Improvement Survey</title>
+    <style>
+		body {
+		font-family: sans-serif, Arial;
+		background-color: #f4eadc;;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+
+		.container {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2), 0 12px 40px 0 rgba(0,0,0,0.19);
+		}
+
+		h1 {
+			margin-bottom: 20px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 8px;
+		}
+
+		input, select, textarea, button {
+			width: 95%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+		.b { 
+			display: flex;
+			justify-content: space-between; 
+			}
+
+		#button {
+			background-color: #654321;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+			width:48%;
+			display:inline-block;
+		}
+
+		#button:hover {
+			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		}
+	</style>
+	<script src="survey.js">	
+	</script>
+	<link type="text/html" href="main.html">
+
+		
+</head>
+<body>
+    <div class="container">
+	<h1 id="greeting"></h1>
+       
+        <form id="surveyForm" method="post" action="main.html">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="visitFrequency">How often do you visit our website?</label>
+            <select id="visitFrequency" name="visitFrequency" required>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="rarely">Rarely</option>
+            </select>
+
+            <label for="contentQuality">How would you rate the quality of our content?</label>
+            <select id="contentQuality" name="contentQuality" required>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+            </select>
+
+            <label for="easeOfUse">How easy is it to navigate our website?</label>
+            <select id="easeOfUse" name="easeOfUse" required>
+                <option value="very_easy">Very Easy</option>
+                <option value="easy">Easy</option>
+                <option value="average">Average</option>
+                <option value="difficult">Difficult</option>
+            </select>
+
+            <label for="suggestions">Do you have any suggestions for improving our website?</label>
+            <textarea id="suggestions" name="suggestions" rows="4" ></textarea>
+			<div class="b">
+            <input type="submit" value="Submit" id="button">
+			<input type="reset" value="Cancel" id="button">
+			</div>
+        </form>
+        <p id="text"></p>
+    </div>
+   
+	
+</body>
+</html>

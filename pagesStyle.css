@@ -1,29 +1,49 @@
-/* external style sheet that is linked to museums descriptions pages */
-
 header, nav, article, aside, footer {
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif, Arial;
+    font-family:  georgia,times new roman;
 }
-
 header {
-    background-color: #654321;
-    color: #f4eadc;
-    padding: 20px;
-    display: flex;
-    align-items: center;    /* w3schools this was used to make items in one line in center*/
-    justify-content: center;    /* w3schools this was used make items at center of container */
+	text-align: center;
+	background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('Mbg.jpeg');
+	background-size: cover;
 }
+.sec1 {
 
-header img {
-    display: inline-block;  /* w3schools used to display items horizontally  */
-    margin-right: 20px;
+	padding: 50px;
+	height: 200px;
+	background-color:rgba(204, 151, 102, 0.5);
 }
-
+header h1 {
+	font-size:45pt;
+	color: black;
+	text-shadow: 4px 3px 10px  #ad792f;
+	margin-top: 100px;
+	margin-bottom: 60px;
+	font-family: serif, fantasy;
+}
+header h3 {
+	text-shadow: 1px 1px 1px black;
+	color: #f4eadc;
+	font-size:30pt;
+	margin-bottom: 40px;
+}
+header p {
+	text-shadow: 1px 1px 1px black;
+	color: rgb(242, 230, 217);
+	font-size:13pt;
+	margin-bottom: 30px;
+	text-align-last:left;
+	text-align:justify;
+}
+#MLogo {
+	position: absolute; 
+}
 nav {
     background-color: #987554;
     padding: 15px;
     text-align: center;
+	
 }
 
 nav ul li {
@@ -52,11 +72,12 @@ table {
     border-spacing: 20px;
 }
 
-article, aside {
+section	{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	font-weight:bold;
 }
 
 footer {
@@ -73,7 +94,7 @@ footer img {
 
 a {
     font-weight: bold;
-    color: #7fa9b5;
+    color: #987554;
     text-decoration: none;
 
 }

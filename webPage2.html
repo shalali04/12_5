@@ -35,51 +35,52 @@
                         top: 0;
                         left: 0;
                         opacity: 0;
-                        animation: fade 12s infinite;
+                        animation: fade 5s infinite;
                     }
             
             
             /* w3schools selcet the image (num) from the container */
-		
-	    .container img:nth-child(1) {
-                animation-delay: 0s;
-            }
             .container img:nth-child(2) {
                 animation-delay: 3s;
             }
             .container img:nth-child(3) {
                 animation-delay: 6s;
             }
-	    .container img:nth-child(4) {
-       	 	animation-delay: 9s; 
-	    }
+			#rec	{	
+						display:block;
+						margin-left:auto; 
+						margin-right:auto;
+						padding-top:5px;
+					}	
+			h2		{
+						text-shadow: 2px 2px 5px #ad792f;
+					}	
+            
         </style>
     </head>
     
     <body>
-        <header>
-            <img src="AquariumLOGO.jpeg" alt="Museum Logo" width="100">
-            <h1>Sharjah Aquarium</h1>
+	    <img id ="MLogo" src="AquariumLOGO.jpeg" alt="Museum Logo" height="150" width="150" style=" left:50px; top:50px;">
+	<header>
+	<div class="sec1">
+		<h1 style="text-shadow: 2px 2px 5px #ad792f;">Sharjah Aquarium Museum</h1>
+	</div>
         </header>
 		
         <nav>
             <ul>
-		<li><a href="main.html">Home</a></li>
-                <li><a href="#overview">Overview</a></li>
+		<li><a href="#overview">Overview</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact Us</a></li>
-		<li><a href="#location">How to Get There</a></li>
-		<li><a href="#website">Official website</a></li>
+		<li><a href="https://www.sharjahmuseums.ae/en-US/Museums/Sharjah-Aquarium">Official website</a></li>
             </ul>
         </nav>
 
         <table border="0">
             <tr>
                 <td>
-                    <article>
                         <section id="overview">
-						<!-- overview section -->
-                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">Overview</h2>
+                            <h2>Overview</h2>
                             
                             <p>Sharjah Aquarium, which opened on June 6, 2008, offers visitors an opportunity to explore the captivating underwater world and its
 							incredible marine life. Home to nearly 100 species, including clownfish, seahorses, moray eels, and reef sharks, 
@@ -94,47 +95,50 @@
 							Sharjah Aquarium also promotes environmental protection through its annual marine clean-up campaign, raising awareness 
 							about the importance of preserving marine ecosystems.</p>
 							
-                        </section>
+                       <div id="gallery">
                         <!-- photos gallery Section -->
-			<section id="gallery">
-			<h2 style="text-shadow: 2px 2px 5px #ad792f;">Photo Gallery</h2>
-			<div class="container">
+                        <h2>Photo Gallery</h2>
+                        <div class="container">
                             <img src="Aquarium1.jpeg" alt="Aquarium PIC1">
                             <img src="Aquarium2.jpeg" alt="Aquarium PIC2">
                             <img src="Aquarium3.jpeg" alt="Aquarium PIC3">
 			    <img src="Aquarium4.jpeg" alt="Aquarium PIC4">
                         </div>
-			</section>	
-						<!--Official website link-->
-                        <section id="website">
-                             <h2 style="text-shadow: 2px 2px 5px #ad792f;">Website for more information:</h2>
+			<!--Official website link-->
+			<div id="website">   
+			    <br>
+			    <h2>Website for more information:</h2>
                             <a href="https://www.sharjahmuseums.ae/en-US/Museums/Sharjah-Aquarium">Visit the website</a>
+			</div>
                         </section>
-                    </article>
                 </td>
                 
                 <td>
-                    <aside>
+                    <div>
                         <section id="contact">
-                            <h2 style="text-shadow: 2px 2px 5px #ad792f;"><br>Contact Details</h2>
+                            <h2><br>Contact Details</h2>
                             <dl>
                                 <dt><strong>Sharjah Aquarium </strong></dt>
                                     <br>
                                     <dd>UAE</dd>
-									<dd>Sharjah</dd>
+				    <dd>Sharjah</dd>
                                     <br>
                                     <dd><a href="mailto:info@smd.gov.ae">info@smd.gov.ae</a></dd>
                                     <dd>+971 6 528 5288</dd>
                             </dl>
-                        </section>
-                        
-                        <section id="location">
-                            <h3>How to get there?</h3>
+                            <h2>How to get there?</h2>
                             <p>Sharjah Aquarium is located in Al Khan Old area</p>
                             <p><a href="https://maps.app.goo.gl/ThZ7t9qdkzk6AgN47">See on Google Maps</a></p>
                                     
                         </section>
-                    </aside>
+                    </div>
+			<br><br>
+			<section style="padding-bottom:100px;">
+				<h2> Check Shrjah's Museums </h2>
+				<span> <a href="webpage4.html"> <img id="rec" src="ScienceLOGO.jpeg" width="60" height="60"> <div style="text-align:center; border-bottom:solid 2px #987554; padding-top:10px; padding-bottom:5px;">Sharjah Science Museum<</div> </a> </span>
+				<span> <a href="webpage3.html"> <img id="rec" src="CarLOGO.jpeg" width="60" height="60"> <div style="text-align:center; border-bottom:solid 2px #987554; padding-top:10px; padding-bottom:5px;">Sharjah Classic Car Museum </div> </a> </span>
+				<span> <a href="webpage5.html"> <img id="rec" src="HeritageLOGO.jpeg" width="60" height="60"> <div style="text-align:center; border-bottom:solid 2px #987554; padding-top:10px; padding-bottom:5px;">Sharjah Aquarium </div> </a> </span>
+			</section>
                 </td>
             </tr>
         </table>

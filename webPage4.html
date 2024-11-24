@@ -35,45 +35,31 @@
                         top: 0;
                         left: 0;
                         opacity: 0;
-                        animation: fade 8s infinite;
+                        animation: fade 12s infinite;
                     }
             
             
             /* w3schools selcet the image (num) from the container */
 		
 	    .container img:nth-child(1) {
-		opacity: 0;
-                animation: none;
+                animation-delay: 0s;
             }
             .container img:nth-child(2) {
-                animation-delay: 2s;
+                animation-delay: 3s;
             }
             .container img:nth-child(3) {
-                animation-delay: 4s;
+                animation-delay: 6s;
             }
 	    .container img:nth-child(4) {
-       	 	animation-delay: 6s; 
+       	 	animation-delay: 9s; 
 	    }
-
-	    #rec{ 
-                display: block; 
-                margin-left: auto; 
-                margin-right: auto; 
-                padding-top: 5px; 
-            } 
-            h2 { 
-                text-shadow: 2px 2px 5px #ad792f;
-            }
-		
         </style>
     </head>
     
     <body>
-	<img id="MLogo" src="ScienceLOGO.jpeg" alt="Museum Logo" height="150" width="150" style="position: absolute; left: 50px; top: 50px;">
         <header>
-	    	<div class="sec1">
-            	<h1>Sharjah Science Museum</h1>
-		</div>
+            <img src="ScienceLOGO.jpeg" alt="Museum Logo" width="100">
+            <h1>Sharjah Science Museum</h1>
         </header>
 		
 		<!-- navigation Menu (Will be adjusted later to be horizontal) -->
@@ -83,11 +69,10 @@
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#location">How to Get There</a></li>
-		<li><a href="https://www.sharjahmuseums.ae/en-US/Museums/Sharjah-%E2%80%8EHeritage-%E2%80%8E%E2%80%8EMuseum">Official website</a></li>
+		<li><a href="#location">How to Get There</a></li>
+		<li><a href="#website">Official website</a></li>
             </ul>
         </nav>
-	    
 
         <table border="0">
             <tr>
@@ -95,7 +80,7 @@
                     <article>
                         <section id="overview">
 			<!-- overview section -->
-                            <h2>Overview</h2>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">Overview</h2>
                             <p>Sharjah Science Museum, opened on April 17, 1996, offers a fun and educational experience for visitors of all ages.
 							The museum encourages learning through engaging scientific experiments, hands-on exhibits, and demonstrations. With over
 							50 interactive displays, the museum covers various topics like physics, biology, aerodynamics, and space, providing
@@ -108,7 +93,7 @@
                         </section>
                         <!-- photos gallery Section -->
 			<section id="gallery">
-                        <h2>Photo Gallery</h2>
+                        <h2 style="text-shadow: 2px 2px 5px #ad792f;">Photo Gallery</h2>
                         <div class="container">
                             <img src="Science-museum1.jpeg" alt="Science PIC1" width="400">
                             <img src="Science-museum2.webp" alt="Science PIC2" width="400">
@@ -117,7 +102,7 @@
 					
 						<!--Official website link-->
                         <section id="website">
-                            <h2>Website for more information:</h2>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;">Website for more information:</h2>
                             <a href="https://www.sharjahmuseums.ae/en-US/Museums/Sharjah-%E2%80%8EHeritage-%E2%80%8E%E2%80%8EMuseum">Visit the website</a>
                         </section>
                     </article>
@@ -126,7 +111,7 @@
                 <td>
                     <aside>
                         <section id="contact">
-                            <h2><br>Contact Details</h2>
+                            <h2 style="text-shadow: 2px 2px 5px #ad792f;"><br>Contact Details</h2>
                             <dl>
                                 <dt><strong>Sharjah Science Museum</strong></dt>
                                     <br>
@@ -139,7 +124,7 @@
                         </section>
                         
                         <section id="location">
-                           <h2>How to get there?</h2>
+                           <h2 style="text-shadow: 2px 2px 5px #ad792f;">How to get there?</h2>
                             <p>The museum is located next to Sharjah Archaeology Museum and Sharjah Media Corporation in Al-Abar area.</p>
                             <p><a href="https://maps.app.goo.gl/SAExacRyE7VXXoej9?g_st=com.google.maps.preview.copy">See on Google Maps</a></p>
                                     

@@ -11,10 +11,13 @@
                        0% {
                            opacity: 0;
                        }
-                       50% {
+                       25% {
                            opacity: 1;
                        }
-                       100% {
+                       50% {
+                           opacity: 0;
+                       }
+		       100% {
                            opacity: 0;
                        }
                    }
@@ -24,7 +27,7 @@
                         margin: auto;  /* w3schools margin auto the browser calculate the margin */
                         position: relative;
                         border-radius: 10px;    /* w3schools border radius help make the border edges rounder */
-                        overflow: hidden;   /* to have hid image overflow*/
+                        overflow: hidden;   /* to hid image overflow*/
                         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                     }
             
@@ -35,18 +38,24 @@
                         top: 0;
                         left: 0;
                         opacity: 0;
-                        animation: fade 5s infinite;
+                        animation: fade 16s infinite; /* for infinite loop*/
                     }
             
             
             /* w3schools selcet the image (num) from the container */
-            .container img:nth-child(2) {
-                	animation-delay: 3s;
-            }
-            .container img:nth-child(3) {
-                	animation-delay: 6s;
-            }
             
+	    .container img:nth-child(1) {
+                	animation-delay: 0s;
+            }
+            .container img:nth-child(2) {
+                	animation-delay: 4s;
+            }
+	    .container img:nth-child(3) {
+                	animation-delay: 8s;
+            }
+            .container img:nth-child(4) {
+                	animation-delay: 12s;
+            }            
             /* styling Back button */
             input[type="button"]
             {

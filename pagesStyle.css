@@ -4,37 +4,36 @@ header, nav, article, aside, footer {
     font-family:  georgia,times new roman;
 }
 header {
-	text-align: center;
-	background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('Mbg.jpeg');
-	background-size: cover;
+    text-align: center;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('Mbg.jpeg');
+    background-size: cover;
 }
 .sec1 {
-
-	padding: 50px;
-	height: 200px;
-	background-color:rgba(204, 151, 102, 0.5);
+    padding: 50px;
+    height: 200px;
+    background-color:rgba(204, 151, 102, 0.5);
 }
 header h1 {
-	font-size:45pt;
-	color: black;
-	text-shadow: 4px 3px 10px  #ad792f;
-	margin-top:  120px;
-	margin-bottom: 60px;
-	font-family: serif, fantasy;
+    font-size:45pt;
+    color: black;
+    text-shadow: 4px 3px 10px  #ad792f;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-family: serif, fantasy;
 }
 header h3 {
-	text-shadow: 1px 1px 1px black;
-	color: #f4eadc;
-	font-size:30pt;
-	margin-bottom: 40px;
+    text-shadow: 1px 1px 1px black;
+    color: #f4eadc;
+    font-size:30pt;
+    margin-bottom: 40px;
 }
 header p {
-	text-shadow: 1px 1px 1px black;
-	color: rgb(242, 230, 217);
-	font-size:13pt;
-	margin-bottom: 30px;
-	text-align-last:left;
-	text-align:justify;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(242, 230, 217);
+    font-size:13pt;
+    margin-bottom: 30px;
+    text-align-last:left;
+    text-align:justify;
 }
 #MLogo {
     position: absolute;
@@ -42,12 +41,11 @@ header p {
     left: 45%;
     margin-bottom: 20px;
         }
-}
 nav {
     background-color: #987554;
     padding: 15px;
     text-align: center;
-	
+    
 }
 
 nav ul li {
@@ -76,12 +74,12 @@ table {
     border-spacing: 20px;
 }
 
-section	{
+section    {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	font-weight:bold;
+    font-weight:bold;
 }
 
 footer {
@@ -116,3 +114,4 @@ a:hover {
 h2        {
     text-shadow: 2px 2px 5px #ad792f;
     }
+

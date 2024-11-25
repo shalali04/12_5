@@ -4,65 +4,94 @@
     <meta charset="utf-8">
     <title>Sharjah Heritage Museum</title>
 	<link rel="stylesheet" href="pagesStyle.css">
-	<style>
-            @keyframes fade {
-                       0% {
-                           opacity: 0;
-                       }
-                       50% {
-                           opacity: 1;
-                       }
-                       100% {
-                           opacity: 0;
-                       }
-                   }
-            .container {
-                        width: 500px;
-                        height: 500px;
-                        margin: auto;  /* w3schools margin auto the browser calculate the margin */
-                        position: relative;
-                        border-radius: 10px;    /* w3schools border radius help make the border edges rounder */
-                        overflow: hidden;   /* to have hid image overflow*/
-                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                    }
-            
-            .container img {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        opacity: 0;
-                        animation: fade 5s infinite;
-                    }
-            
-            
-            /* w3schools selcet the image (num) from the container */
-            .container img:nth-child(2) {
-                animation-delay: 3s;
+    <style>
+        @keyframes fade {
+            0% {
+                opacity: 0;
             }
-            .container img:nth-child(3) {
-                animation-delay: 6s;
+            25% {
+                opacity: 1;
             }
-			#rec	{	
-						display:block;
-						margin-left:auto; 
-						margin-right:auto;
-						padding-top:5px;
-					}	
-			h2		{
-						text-shadow: 2px 2px 5px #ad792f;
-					}	
-						
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            animation: fade 16s infinite; /* Animation duration and infinite loop */
+        }
+
+        .container img:nth-child(1) {
+            animation-delay: 0s; /* Starts immediately */
+        }
+
+        .container img:nth-child(2) {
+            animation-delay: 4s; /* Starts after 4 seconds */
+        }
+
+        .container img:nth-child(3) {
+            animation-delay: 8s; /* Starts after 8 seconds */
+        }
+
+        .container img:nth-child(4) {
+            animation-delay: 12s; /* Starts after 12 seconds */
+        }
+
+            /* styling Back button */
+            input[type="button"]
+            {
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    background-color: #ad792f;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            input[type="button"]:hover
+            {
+                        background-color: #8c643b;
+                }
+
         </style>
-   
-</head>
-<body>
-	<img id ="MLogo" src="HeritageLOGO.jpeg" alt="Museum Logo" height="150" width="150" style=" left:50px; top:50px;">
+        <script>
+        /* w3schools JavaScript Window History */
+            function goBack()
+        {
+                    window.history.back();
+            }
+        </script>
+    </head>
+    
+    <body>
+	<!-- w3schools JavaScript Window History -->
+	<input type="button" value="Back" onclick="goBack()">
+        <img id ="MLogo" src="HeritageLOGO.jpeg" alt="Museum Logo"  height="150" width="150">
 	<header>
 	<div class="sec1">
-		<h1 style="text-shadow: 2px 2px 5px #ad792f;">Sharjah Heritage Museum</h1>
-		
+		<h1 style="text-shadow: 2px 2px 5px #ad792f;">Sharjah Heritage Museum</h1>	
 	</div>
 	</header>
 	<nav>
@@ -132,9 +161,9 @@
 						<br><br>
 						<section style="padding-bottom:100px;">
 						<h2> Check Shrjah's Museums </h2>
-						<span> <a href="webpage4.html"> <img id="rec" src="ScienceLOGO.jpeg" width="60" height="60"> <div style="text-align:center; border-bottom:solid 2px #987554; padding-top:10px; padding-bottom:5px;">Sharjah Science Museum<</div> </a> </span>
-						<span> <a href="webpage3.html"> <img id="rec" src="CarLOGO.jpeg" width="60" height="60"> <div style="text-align:center; border-bottom:solid 2px #987554; padding-top:10px; padding-bottom:5px;">Sharjah Classic Car Museum </div> </a> </span>
-						<span> <a href="webpage2.html"> <img id="rec" src="AquariumLOGO.jpeg" width="60" height="60"> <div style="text-align:center; border-bottom:solid 2px #987554; padding-top:10px; padding-bottom:5px;">Sharjah Aquarium </div> </a> </span>
+						<span> <a href="webPage1.html"> <img id="rec" src="mairtimeLOGO.png" width="60" height="60"> <div style="text-align:center; border-bottom:solid 2px #987554; padding-top:10px; padding-bottom:5px;">Sharjah Maritime Museum</div> </a> </span>
+						<span> <a href="webPage3.html"> <img id="rec" src="CarLOGO.jpeg" width="60" height="60"> <div style="text-align:center; border-bottom:solid 2px #987554; padding-top:10px; padding-bottom:5px;">Sharjah Classic Car Museum </div> </a> </span>
+						<span> <a href="webPage2.html"> <img id="rec" src="AquariumLOGO.jpeg" width="60" height="60"> <div style="text-align:center; border-bottom:solid 2px #987554; padding-top:10px; padding-bottom:5px;">Sharjah Aquarium </div> </a> </span>
 						
 					</section>	
                     

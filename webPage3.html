@@ -6,28 +6,28 @@
         <title>Sharjah Classic Car Museum</title>
 	<link rel="stylesheet" href="pagesStyle.css">
 	
-	<style>
+        <style>
+            /* devide the cycle equaly on the num of imgs*/
            @keyframes fade {
                        0% {
                            opacity: 0;
                        }
-                       25% {
+                       33.33% {
                            opacity: 1;
                        }
-                       50% {
+                       66.66% {
                            opacity: 0;
                        }
-		       100% {
+                       100% {
                            opacity: 0;
-                       }
-                   }
+                       }                   }
             .container {
                         width: 500px;
                         height: 500px;
                         margin: auto;  /* w3schools margin auto the browser calculate the margin */
                         position: relative;
                         border-radius: 10px;    /* w3schools border radius help make the border edges rounder */
-                        overflow: hidden;   /* to hid image overflow*/
+                        overflow: hidden;   /* to have hid image overflow*/
                         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                     }
             
@@ -38,24 +38,22 @@
                         top: 0;
                         left: 0;
                         opacity: 0;
-                        animation: fade 16s infinite; /* for infinite loop*/
+                        animation: fade 12s infinite;
                     }
             
             
             /* w3schools selcet the image (num) from the container */
-            
-	    .container img:nth-child(1) {
-                	animation-delay: 0s;
+        
+            .container img:nth-child(1) {
+                    animation-delay: 0s;
             }
             .container img:nth-child(2) {
-                	animation-delay: 4s;
+                    animation-delay: 4s;
             }
-	    .container img:nth-child(3) {
-                	animation-delay: 8s;
+            .container img:nth-child(3) {
+                    animation-delay: 8s;
             }
-            .container img:nth-child(4) {
-                	animation-delay: 12s;
-            }            
+            
             /* styling Back button */
             input[type="button"]
             {
@@ -76,19 +74,18 @@
                 }
 
         </style>
-    	<script>
-		/* w3schools JavaScript Window History */
-        	function goBack() 
-		{
-            		window.history.back();
-        	}
-    	</script>
+        <script>
+        /* w3schools JavaScript Window History */
+            function goBack()
+        {
+                    window.history.back();
+            }
+        </script>
     </head>
-    
     <body>
 	<!-- w3schools JavaScript Window History -->
 	<input type="button" value="Back" onclick="goBack()">
-		<img id ="MLogo" src="CarLOGO.jpeg" alt="Museum Logo" height="150" width="150">
+	<img id ="MLogo" src="CarLOGO.jpeg" alt="Museum Logo" height="150" width="150">
         <header>
 		<div class="sec1">
             <h1 style="text-shadow: 2px 2px 5px #ad792f;">Sharjah Classic Car Museum</h1>

@@ -16,8 +16,27 @@
 			</div>
 	</header>	
 	<script>
-		window.alert("Help us to IMPROVE, join the survey please");
-	</script>		
+	    	function show_alert() 
+		{
+	        	window.alert( greetUser() + " Welcome to Sharjah Maritime Museum!\nWe value your feedback, please take a moment to complete our survey and help us improve your experience.");
+	    	}
+	
+	    	function greetUser() 
+		{
+		        var now = new Date();
+		        var hour = now.getHours();
+		        
+			if (hour < 12) 
+		            return "Good Morning!";
+		        else if (hour < 18)
+		            return "Good Afternoon!";
+		        else
+		            return "Good Evening!";
+	    	}
+	
+	    	window.onload = show_alert;
+	</script>
+		
 	<body>
 	
 	

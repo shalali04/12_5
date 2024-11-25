@@ -5,7 +5,7 @@ header, nav, article, aside, footer {
 }
 header {
 	text-align: center;
-	background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+	background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('Mbg.jpeg');
 	background-size: cover;
 }
 .sec1 {
@@ -106,30 +106,12 @@ a:hover {
     text-decoration: underline;
 }
 
-#rec {
+#rec    {
     display:block;
     margin-left:auto;
     margin-right:auto;
     padding-top:5px;
 }
-h2  {
+h2        {
     text-shadow: 2px 2px 5px #ad792f;
-    }
-
-
-/* styling Back button */
-input[type="button"] {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #ad792f;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-input[type="button"]:hover{
-        background-color: #8c643b;
     }
